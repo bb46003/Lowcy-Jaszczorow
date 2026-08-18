@@ -1,4 +1,5 @@
 <section class="sheet-header">
+    <div class="tozsamosc">
     <h2>{{localize "LJ.lowca.tozsamosc"}}</h2>
     <div class="image-container">
         {{#if (not tokenDisplay)}}
@@ -26,7 +27,7 @@
             <span class="label">{{localize "LJ.lowca.token"}}</span>
         </div>
     </div>
-    <div>
+    <div class="dane-lowcy">
         <div class="flexrow">
             <label>{{localize "LJ.lowca.imie"}}</label>
             <input name="name" type="text" value="{{actor.name}}" />
@@ -40,9 +41,10 @@
             <label>Odnosnik do sciezki lowcy</label>
         </div>
     </div>
-    <div>
+    </div>
+    <div class="atrybuty">
         <h2>{{localize "LJ.lowca.atrybuty" }}</h2>
-        <div>
+        <div class="cechy">
             {{log systemFields.cechy.fields}}
             {{#each systemFields.cechy.fields as |cecha|}}
             {{log cecha}}
