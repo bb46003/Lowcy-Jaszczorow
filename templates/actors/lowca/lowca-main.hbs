@@ -1,0 +1,60 @@
+<section class="sheet-header">
+    <h2>{{localize "LJ.lowca.tozsamosc"}}</h2>
+    <div class="image-container">
+        {{#if (not tokenDisplay)}}
+            <img
+                class="profile-img"
+                src="{{@root.actor.img}}"
+                data-edit="img"
+                data-action="editImage"
+                data-edit="img"
+            />
+        {{else}}
+            <img
+                class="profile-img"
+                src="{{@root.tokenImg}}"
+                data-action="editImage"
+                data-edit="prototypeToken.texture.src"
+            />
+        {{/if}}
+        <div class="toggle-wrapper">
+            <span class="label">{{localize "LJ.lowca.obraz"}}</span>
+            <label class="switch">
+                <input type="checkbox" data-action="toggle" {{#if tokenDisplay}}checked{{/if}}>
+                <span class="slider"></span>
+            </label>
+            <span class="label">{{localize "LJ.lowca.token"}}</span>
+        </div>
+    </div>
+    <div>
+        <div class="flexrow">
+            <label>{{localize "LJ.lowca.imie"}}</label>
+            <input name="name" type="text" value="{{actor.name}}" />
+        </div>
+        <div class="flexrow">
+            <label>{{localize "LJ.lowca.plemie"}}</label>
+            <label>Aktor Plemie odnoscnik</label>
+        </div>
+        <div class="flexrow">
+            <label>{{localize "LJ.lowca.sciezka"}}</label>]
+            <label>Odnosnik do sciezki lowcy</label>
+        </div>
+    </div>
+    <div>
+        <h2>{{localize "LJ.lowca.atrybuty" }}</h2>
+        <div>
+            {{log systemFields.cechy.fields}}
+            {{#each systemFields.cechy.fields as |cecha|}}
+            {{log cecha}}
+                <div class="flexrow">
+                    <a data-action="rzut_atrybut" data-atrybut="{{cecha.name}}">{{localize cecha.label}}</a>
+                    {{formInput
+                        cecha
+                        value=(lookup @root.system.cechy cecha.name)
+                        type="text"
+                    }}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

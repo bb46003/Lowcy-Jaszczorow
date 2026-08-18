@@ -34,7 +34,7 @@
     "Actor": {
       "lowca": {},
       "jaszczor": {},
-      "npc":{}
+      "npc": {}
     },
     "ActiveEffect": {
       "condition": {}
