@@ -1,0 +1,38 @@
+<section
+  class="tab umiejetnosci {{tabs.umiejetnosci.cssClass}}"
+  action-data="tab"
+  data-tab="umiejetnosci"
+  data-group="items"
+>
+  <h2>
+    {{localize "LJ.lowca.umiejetnosci"}}
+    <a data-action="dodaj" data-type="umiejetnosc"><i
+        class="fa fa-plus"
+        ata-action="dodaj"
+        data-type="umiejetnosc"
+      ></i></a>
+  </h2>
+  <div>
+    <ul>
+      {{#each umiejetnosci as |umiejetnosc|}}
+        <li>
+          <div class="flexrow">
+            <div class="item-img">
+              <img src="{{umiejetnosc.img}}" class="talent-img" />
+            </div>
+            <label class="bold">{{umiejetnosc.name}}</label>
+            <a
+              class="threeDots"
+              data-action="itemContextMenu"
+              data-item="{{@key}}"
+              data-type="umiejetnosc"
+            >
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
+            <span>{{{umiejetnosc.html}}}</span>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

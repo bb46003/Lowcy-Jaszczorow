@@ -1,0 +1,31 @@
+<section class="sheet-header">
+  <div class="top">
+    <div class="image-container">
+      <img
+        class="profile-img"
+        src="{{@root.item.img}}"
+        data-edit="img"
+        data-action="editImage"
+        data-edit="img"
+      />
+
+    </div>
+    <div class="dane-lowcy">
+      <div class="flexrow">
+        <label>{{localize "LJ.przedmiot.nazwa"}}</label>
+        <input name="name" type="text" value="{{item.name}}" />
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <label>{{localize "lj.przedmiot.opis"}}</label>
+    <div class="form-group">
+      {{formInput
+        opis.field
+        value=opis.value
+        enriched=opis.enriched
+        toggled="true"
+      }}
+    </div>
+  </div>
+</section>

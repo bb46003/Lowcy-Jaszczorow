@@ -15,6 +15,8 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
 
   static defineSchema() {
     return {
+      plemie: new StringField({}),
+      sciezka: new StringField({}),
       kondycja: new SchemaField({
         current: new NumberField({
           initial: 0,
@@ -43,6 +45,7 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         },
         initial: "normalny",
         required: true,
+        label: "LJ.lowca.ruch",
       }),
       dziki_zeton: new BooleanField({
         initial: true,

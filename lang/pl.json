@@ -1,1 +1,41 @@
-{}
+{
+  "LJ": {
+    "lowca": {
+      "umiejetnosci": "Umiejętności",
+      "ekwipunek": "Ekwipunek",
+      "historia": "Historia Łowcy",
+      "o_tobie": "O Tobie",
+      "zdolnosci": "Zdolności",
+      "tozsamosc": "Tożsamość",
+      "obraz": "Obraz",
+      "token": "Token",
+      "imie": "Imię Łowcy",
+      "plemie": "Nazwa Plemienia",
+      "sciezka": "\nŚcieżka Łowcy",
+      "atrybuty": "Atrybuty",
+      "kondycja": "Kondycja",
+      "rany": "Rany",
+      "progRanny": "Próg Rann",
+      "ruch": "Ruch",
+      "dzikiZeton": "Dziki Żeton",
+      "pancerz": "Pancerz",
+      "obrazenia": "Obrażenia",
+      "cechy": {
+        "przebieglosc": "Przebiegłość",
+        "przyroda": "Przyroda",
+        "reflkes": "Reflex",
+        "rytualy": "Rytuały",
+        "wladza": "Władza",
+        "zew": "Zew"
+      }
+    },
+    "przedmiot": {
+      "nazwa": "Nazwa Przedmiotu"
+    }
+  },
+  "lj": {
+    "przedmiot": {
+      "opis": "Opis Przedmiotu"
+    }
+  }
+}
