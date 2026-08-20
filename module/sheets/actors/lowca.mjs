@@ -1,4 +1,5 @@
 import { enrich } from "../../utilities/utils.mjs";
+import lowcyRollDialog from "../../dialogs/roll.mjs";
 
 const { api, sheets } = foundry.applications;
 
@@ -18,6 +19,7 @@ export class lowcaSheet extends api.HandlebarsApplicationMixin(
       toggle: lowcaSheet.#toggle,
       itemContextMenu: lowcaSheet.#itemContextMenu,
       dodaj: lowcaSheet.#dodaj,
+      rzut_atrybut: lowcaSheet.#rzut_atrybut,
     },
     form: {
       submitOnChange: true,
@@ -166,7 +168,7 @@ export class lowcaSheet extends api.HandlebarsApplicationMixin(
 
     const menu = document.createElement("div");
     menu.classList.add("custom-context-menu");
-    const openLabel = game.i18n.format(" LJ.lowca.otworz", { type: type });
+    const openLabel = game.i18n.format("LJ.lowca.otworz", { type: type });
     const deleteLabel = game.i18n.format("LJ.lowca.usun", { type: type });
     menu.innerHTML = `
     <div class="menu-option" data-action="open">${openLabel}</div>
@@ -206,5 +208,17 @@ export class lowcaSheet extends api.HandlebarsApplicationMixin(
     const itemData = { type: type, name: name, system: {} };
     const item = await this.actor.createEmbeddedDocuments("Item", [itemData]);
     item[0].sheet.render({ force: true });
+  }
+  static async #rzut_atrybut(ev) {
+    const actor = this.actor;
+    const target = ev.target;
+    const cechaName = target.dataset.atrybut;
+    const cechaValue = actor.system.cechy[cechaName];
+    const cecha = {
+      name: cechaName,
+      value: cechaValue,
+    };
+    const rollDialog = new lowcyRollDialog(actor, cecha);
+    rollDialog.render({ force: true });
   }
 }

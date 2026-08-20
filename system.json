@@ -11,7 +11,7 @@
   "version": "0.0.1",
   "compatibility": {
     "minimum": 14,
-    "verified": "14.360"
+    "verified": "14.365"
   },
   "esmodules": ["module/main.mjs"],
   "styles": ["css/lowcy-jaszczorow.css"],
@@ -40,7 +40,6 @@
       "condition": {}
     },
     "Item": {
-      "typ-lowcy": {},
       "zdolnosc": {},
       "umiejetnosc": {},
       "bron": {},

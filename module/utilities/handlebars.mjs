@@ -76,8 +76,9 @@ export function registerHandlebarsHelpers() {
     return false;
   });
 
-  Handlebars.registerHelper("format", function (string, object) {
-    const localization = game.i18n.format(string, object.hash);
-    return localization;
+  Handlebars.registerHelper("format", function (string, key, value) {
+    return game.i18n.format(string, {
+      [key]: value,
+    });
   });
 }

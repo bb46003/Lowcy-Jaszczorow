@@ -39,7 +39,7 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
       }),
       ruch: new StringField({
         choices: {
-          wolny: "LJ.ruch.wony",
+          wolny: "LJ.ruch.wolny",
           normalny: "LJ.ruch.normalny",
           szybki: "LJ.ruch.szybki",
         },
@@ -62,9 +62,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
       cechy: new SchemaField({
         brutalnosc: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.brutalnosc",
@@ -72,9 +72,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         determinacja: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.determinacja",
@@ -82,9 +82,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         przebieglosc: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.przebieglosc",
@@ -92,9 +92,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         przyroda: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.przyroda",
@@ -102,9 +102,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         refleks: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.reflkes",
@@ -112,9 +112,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         rzemioslo: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.rzemioslo",
@@ -122,9 +122,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         rytualy: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.rytualy",
@@ -132,9 +132,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         wladza: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.wladza",
@@ -142,9 +142,9 @@ export class lowcaDataModel extends foundry.abstract.TypeDataModel {
         }),
         zew: new StringField({
           choices: {
-            d12: "LJ.lowca.k12",
-            d10: "LJ.lowca.k10",
-            d8: "LJ.lowca.k8",
+            d12: "LJ.lowca.d12",
+            d10: "LJ.lowca.d10",
+            d8: "LJ.lowca.d8",
           },
           initial: "d12",
           label: "LJ.lowca.cechy.zew",

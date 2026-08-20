@@ -1,0 +1,10 @@
+<section class="lowcy-chat flexcol" >
+    {{#each cechy as |cecha|}}
+        <h4>{{localize "LJ.chat.rzutNaCeche"}} {{localize (concat "LJ.lowca.cechy." cecha.name)}}</h4>
+    {{/each}}
+    {{#if sucess}}
+    <label class="sukces">{{localize "LJ.chat.sukces"}}</label>
+    {{else}}
+    <label class="porazka">{{localize "LJ.chat.porazka"}}</label>
+    {{/if}}
+</section>

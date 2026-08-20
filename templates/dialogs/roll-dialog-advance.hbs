@@ -1,0 +1,20 @@
+<section class="tab advance {{tabs.advance.cssClass}}" action-data="tab"  data-tab="advance">
+    <label class="main-text">{{localize "LJ.dialog.rzutZlozony"}}</label>
+    <div classk="flexrow">
+        <label>{{localize "LJ.dialog.cechaPierwotna"}}</label>
+        <label>{{format "LJ.dialog.cecha" "cecha" cechaPodstawowa.name}} - {{localize (concat "LJ.lowca." cechaPodstawowa.value)}}</label>
+    </div>
+     <label class="main-text">{{localize "LJ.dialog.dodatkoweCechy"}}</label>
+    <div class="text">
+            {{#each cechy as |cecha|}}
+                <div class="flexcol">
+                    <Label class="bold">{{localize (concat "LJ.lowca.cechy." @key)}} - {{localize (concat "LJ.lowca." cecha)}}</Label>
+                    <div class="flexrow">
+                    <label>{{localize "LJ.dialog.uzyjCechy"}}</label>
+                    <input type="checkbox" data-cecha={{@key}} data-kostka={{cecha}}></input>
+                    </div>
+                </div>
+            {{/each}}
+    </div>
+    <button data-action="advanceRoll">{{localize "LJ.dialog.rzut"}}</button>
+</section>

@@ -333,3 +333,287 @@ reviews:
             suggestion: ''
             type: approve
             time: '2026-08-19T14:27:47.309Z'
+  LJ.lowca.cechy.brutalnosc:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: KbzhGx9l8oyQE1OnKnXFW
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:12:54.334Z'
+  LJ.lowca.cechy.determinacja:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: qG0Y7B5gTWMmK0viph_tT
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:13:15.992Z'
+  LJ.lowca.cechy.rzemioslo:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: CDSlNkx17Td9NUQoX2WNM
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:13:30.161Z'
+  LJ.lowca.pamiec:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: wjDlbjHnqSh_4GV7PAdWv
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:15:15.725Z'
+  LJ.lowca.jakZostales:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 1BtKYwlaDGu3UkeB42Qv-
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:16:02.019Z'
+  LJ.lowca.znanyLowca:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: lYY90Oqrr6zvDUfSVVO5C
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:16:59.382Z'
+  LJ.lowca.strach:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: E9_vhLcnq72frZoi2xGbB
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:17:20.945Z'
+  LJ.lowca.marzenia:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: YqdBIokoqBvMXxk6bJCLN
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:17:34.513Z'
+  LJ.lowca.osoba:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: xV2X45ThTmfw3oDNJ-M5K
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:17:59.764Z'
+  LJ.lowca.cel:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 2cZW9IxAB89X6gbNZ3KoF
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:18:21.362Z'
+  LJ.lowca.zaufanie:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: jqp8ajk7-pe80LpOfLU7A
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:18:43.561Z'
+  ' LJ.lowca.otworz':
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: FWXTBA6k-JjPAyBJ26HdJ
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:19:41.837Z'
+          - user:
+              name: Unknown
+              email: ''
+            id: MT7-mz9KeldvbWrPcn4Dz
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:26:26.809Z'
+  LJ.lowca.usun:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: upzItuNiCSfzQ5BGf3u_6
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T06:19:53.443Z'
+  LJ.dialog.rzutProsty:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: uwZkUTm134MlYjCe4_RrC
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:20:35.057Z'
+  LJ.dialog.rzut:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 4gOmAS9emx5fNAz8PqCtS
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:21:53.574Z'
+  LJ.dialog.rzutZlozony:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 7OSmorT2JAsrHZ4c0W4jj
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:22:31.191Z'
+  LJ.dialog.zlorzony:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 7R9OK1sd3vW3UV_zrUD1m
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:22:42.159Z'
+  LJ.dialog.cechaPierwotna:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: yEnn-ZEXhqB3cQlQpqhqh
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:23:04.086Z'
+  LJ.dialog.dodatkoweCechy:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: vPXyR_zKg1sT7hYUX5sFK
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:23:34.762Z'
+  LJ.dialog.uzyjCechy:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: FimRhrWyFCUMGXNJ5rq7g
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T11:23:57.871Z'
+  LJ.chat.sukces:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: wKnyWuqWMVs4uVM5UouSb
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T13:44:02.683Z'
+  LJ.chat.porazka:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 79P2laSSWnBlgwlRZt4Ia
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T13:44:14.198Z'
+  LJ.chat.rzutNaCeche:
+    locales:
+      pl:
+        comments:
+          - user:
+              name: Unknown
+              email: ''
+            id: 9EsOdBtTEBFiK-Oz2oBuW
+            comment: ''
+            suggestion: ''
+            type: approve
+            time: '2026-08-20T13:45:42.123Z'

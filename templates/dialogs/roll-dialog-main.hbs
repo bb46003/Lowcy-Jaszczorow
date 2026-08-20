@@ -1,0 +1,18 @@
+<section
+  class="tab main {{tabs.main.cssClass}}"
+  action-data="tab"
+  data-tab="main"
+>
+  <label class="main-text">{{localize "LJ.dialog.rzutProsty"}}</label>
+  <div class="text">
+    <label>{{format "LJ.dialog.cecha" "cecha" cechaPodstawowa.name}}
+      -
+      {{localize (concat "LJ.lowca." cechaPodstawowa.value)}}
+      </label>
+    <button data-action="prosty">{{localize "LJ.dialog.rzut"}}</button>
+  </div>
+  <div class="text">
+    <label class="main-text">{{localize "LJ.dialog.rzutZlozony"}}</label>
+    <button data-action="zlozony">{{localize "LJ.dialog.zlorzony"}}</button>
+  </div>
+</section>

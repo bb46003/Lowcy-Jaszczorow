@@ -43,3 +43,10 @@ Hooks.once("init", async function () {
 
   registerHandlebarsHelpers();
 });
+Hooks.once("ready", async () => {
+  const currentLang = game.settings.get("core", "language");
+  if (currentLang !== "pl") {
+    await game.settings.set("core", "language", "pl");
+    window.location.reload();
+  }
+});
