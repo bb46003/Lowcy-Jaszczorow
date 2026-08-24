@@ -221,4 +221,7 @@ export class lowcaSheet extends api.HandlebarsApplicationMixin(
     const rollDialog = new lowcyRollDialog(actor, cecha);
     rollDialog.render({ force: true });
   }
+    _processFormData(event, form, formData) {
+       return super._processFormData(event, form, formData);
+    }
 }

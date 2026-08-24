@@ -60,10 +60,15 @@ export default class lowcyRollDialog extends HandlebarsApplicationMixin(
   }
   _prepareCechy() {
     const cechaPodstawowa = this.cechaPodstawowa;
-    const cechy = this.actor.system.cechy;
+    const cechy = { ...this.actor.system.cechy };
+
     delete cechy[cechaPodstawowa.name];
-    return cechy;
-  }
+
+    return Object.entries(cechy).map(([name, value]) => ({
+        name,
+        value
+    }));
+}
   static async #prosty() {
     const rzut = new lowcyRzut(this.actor,this.cechaPodstawowa);
     rzut.prosty();

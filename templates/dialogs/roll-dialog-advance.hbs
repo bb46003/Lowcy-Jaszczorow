@@ -8,10 +8,10 @@
     <div class="text">
             {{#each cechy as |cecha|}}
                 <div class="flexcol">
-                    <Label class="bold">{{localize (concat "LJ.lowca.cechy." @key)}} - {{localize (concat "LJ.lowca." cecha)}}</Label>
+                    <Label class="bold">{{localize (concat "LJ.lowca.cechy." cecha.name)}} - {{localize (concat "LJ.lowca." cecha.value)}}</Label>
                     <div class="flexrow">
                     <label>{{localize "LJ.dialog.uzyjCechy"}}</label>
-                    <input type="checkbox" data-cecha={{@key}} data-kostka={{cecha}}></input>
+                    <input type="checkbox" data-cecha={{cecha.name}} data-kostka={{cecha.value}}></input>
                     </div>
                 </div>
             {{/each}}
