@@ -168,8 +168,9 @@ export class lowcaSheet extends api.HandlebarsApplicationMixin(
 
     const menu = document.createElement("div");
     menu.classList.add("custom-context-menu");
-    const openLabel = game.i18n.format("LJ.lowca.otworz", { type: type });
-    const deleteLabel = game.i18n.format("LJ.lowca.usun", { type: type });
+    const localizeType = game.i18n.localize("TYPES.item."+ type)
+    const openLabel = game.i18n.format("LJ.lowca.otworz", { type: localizeType });
+    const deleteLabel = game.i18n.format("LJ.lowca.usun", { type: localizeType });
     menu.innerHTML = `
     <div class="menu-option" data-action="open">${openLabel}</div>
     <div class="menu-option" data-action="delete">${deleteLabel}</div>

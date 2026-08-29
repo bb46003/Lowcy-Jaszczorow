@@ -7,7 +7,7 @@
     },
     "Item": {
       "zdolnosc": "Zdolność",
-      "umiejetnosc": "Umiejętnośc",
+      "umiejetnosc": "Umiejętność",
       "bron": "Broń",
       "pancerz": "Pancerz",
       "przedmiot": "Przedmiot"
@@ -37,7 +37,7 @@
       "cechy": {
         "przebieglosc": "Przebiegłość",
         "przyroda": "Przyroda",
-        "reflkes": "Reflex",
+        "reflkes": "Refleks",
         "rytualy": "Rytuały",
         "wladza": "Władza",
         "zew": "Zew",
