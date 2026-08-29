@@ -2,7 +2,7 @@
   "TYPES": {
     "Actor": {
       "lowca": "Łowca",
-      "jaszczor": "Jaszczór",
+      "jaszczor": "Jaszczur",
       "npc": "BN"
     },
     "Item": {
