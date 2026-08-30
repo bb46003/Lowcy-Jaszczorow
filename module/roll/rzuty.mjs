@@ -9,34 +9,32 @@ export default class lowcyRzut {
         const rzut = new Roll(formula);
         await rzut.evaluate()
         const results = rzut.total;
-        let sucess = false;
-        if(results <= 5){
-            sucess = true
-        };
-        const content = await foundry.applications.handlebars.renderTemplate(
+        const sucess = results <= 5;
+        const rolledDice = rzut.dice;
+        const diceResults = rolledDice.map(die => ({
+    formula: die.formula,
+    result: die.total
+}));
+        const flavor = await foundry.applications.handlebars.renderTemplate(
             "systems/lowcy-jaszczorow/templates/chat/chat-message-prosty.hbs",
             {
-                cechaName : this.cechy.name,
+                cechaName : cecha,
                 sucess: sucess
             });
-
-        const chatMessage = await rzut.toMessage({
+        const content = await foundry.applications.handlebars.renderTemplate(
+            "systems/lowcy-jaszczorow/templates/chat/chat-message-zlozony-kostki.hbs",
+            {
+                diceResults : diceResults,
+                sucess: sucess
+            });
+         await rzut.toMessage({
             user: game.user.id,
             speaker: ChatMessage.getSpeaker({ actor: this.actor}),
-            flavor: content,
+            flavor: flavor,
+            content: content
         })
 
-        Hooks.once("renderChatMessageHTML", (message, html) => {
-            if (message.id !== chatMessage.id) return;
 
-            const rollContent = html.querySelector(".message-content");
-
-            if (!rollContent) return;
-
-            rollContent.classList.add(
-                sucess ? "sukces" : "porazka"
-            );
-        });
     }
       async zlozony(){
 
@@ -51,7 +49,7 @@ formula += "}";
         const results = rzut.dice;
 
 
-const success = results.every(die => die.total <= 5);
+const sucess = results.every(die => die.total <= 5);
 
 const diceResults = results.map(die => ({
     formula: die.formula,
@@ -62,31 +60,22 @@ const diceResults = results.map(die => ({
             "systems/lowcy-jaszczorow/templates/chat/chat-message-zlozony.hbs",
             {
                 cechy : cechy,
-                sucess: success
+                sucess: sucess
             });
         const content = await foundry.applications.handlebars.renderTemplate(
             "systems/lowcy-jaszczorow/templates/chat/chat-message-zlozony-kostki.hbs",
             {
                 diceResults : diceResults,
+                sucess: sucess
             });
-        const chatMessage = await rzut.toMessage({
+       await rzut.toMessage({
             user: game.user.id,
             speaker: ChatMessage.getSpeaker({ actor: this.actor}),
             flavor: flavor,
             content: content
         })
 
-        Hooks.once("renderChatMessageHTML", (message, html) => {
-            if (message.id !== chatMessage.id) return;
 
-            const rollContent = html.querySelector(".message-content");
-
-            if (!rollContent) return;
-
-            rollContent.classList.add(
-                success ? "sukces" : "porazka"
-            );
-        });
     }
 }
 

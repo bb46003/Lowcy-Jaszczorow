@@ -132,6 +132,7 @@ export class lowcaSheet extends api.HandlebarsApplicationMixin(
     context.umiejetnosci = await this.prepareItems("umiejetnosc");
     context.zdolnosci = await this.prepareItems("zdolnosc");
     context.ekwipunek = await this.prepareItems("przedmiot");
+    context.theme = game.settings.get("core", "uiConfig").colorScheme.applications;
     return context;
   }
   async prepareItems(type) {

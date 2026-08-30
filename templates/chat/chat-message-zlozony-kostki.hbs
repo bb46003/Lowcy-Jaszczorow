@@ -1,4 +1,4 @@
-  <div class="dice-roll" data-action="expandRoll">
+  <div class="dice-roll {{#if sucess}}sucess{{else}}fail{{/if}}" data-action="expandRoll">
     {{#each diceResults as |results|}}
         <div class="dice-result">
         <div class="dice-formula">{{results.formula}}</div>
